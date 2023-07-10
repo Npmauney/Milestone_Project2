@@ -2,11 +2,12 @@ const React = require('react')
 const Default = require('./layouts/default')
 const { link } = require('../controllers/bread')
 
+//breads is the name of the array of objects
 function Index ({ breads }) {
     const breadDisplay = breads.map((bread,i) => {
         return (
             //interpolates throught the bread array
-            //adds a hyperlink to the index of the breads array (which changes the webpage because of the code in bread.js in controllers)
+            //adds a hyperlink to the index of the breads array (which changes the webpage because of the code in bread.js in controllers/models)
             <li key={i}>
                 <a href={`/breads/${i}`}>
                     {bread.name}

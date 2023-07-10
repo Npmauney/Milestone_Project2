@@ -8,7 +8,7 @@ router.get('/', (req,res) => {
 //gets a specific bread based on the index of the breads array
 router.get('/:index', (req,res) => {
     const {index} = req.params
-    res.send(Bread[index])
+    res.render('show',{bread:Bread[index]})
 })
 
 module.exports = router
