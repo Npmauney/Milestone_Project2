@@ -22,6 +22,13 @@ function Index ({ breads }) {
         <ul>
             {breadDisplay}
         </ul>
+        <div>
+            <a href = '/breads/new'>
+            <button>
+                Add a new bread
+            </button>
+            </a>
+        </div>
       </Default>
     )
 }
