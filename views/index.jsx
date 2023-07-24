@@ -2,7 +2,7 @@ const React = require('react')
 const Default = require('./layouts/default')
 
 //breads is the name of the array of objects
-function Index ({ breads }) {
+function Index ({ breads, bakers }) {
     const breadDisplay = breads.map((bread) => {
         return (
             //interpolates throught the bread array
@@ -15,9 +15,23 @@ function Index ({ breads }) {
         )
     })
 
+    const bakerDisplay = bakers.map(baker => {
+        return (
+            <li key={baker._id}>
+                <a href={`/bakers/${baker._id}`}>
+                    {baker.name}
+                </a>
+            </li>
+        )
+    })
+
     return (
       <Default>
-        <h2>Index Page</h2>
+        <h2>Bakers</h2>
+        <ul>
+            {bakerDisplay}
+        </ul>
+        <h2>Breads</h2>
         <ul>
             {breadDisplay}
         </ul>

@@ -1,30 +1,35 @@
 const router = require('express').Router()
+const baker = require('../models/baker')
 const Bread = require('../models/bread')
 
 router.get('/', async (req,res) => {
     const breads = await Bread.find()
-    res.render('index', {breads})
+    const bakers = await baker.find()
+    res.render('index', {breads, bakers})
 })
 
-router.get('/new', (req,res) => {
-    res.render('new')
+router.get('/new', async (req,res) => {
+    const bakers = await baker.find()
+    res.render('new', { bakers })
 })
 
 //gets a specific bread based on the index of the breads array
 router.get('/:id', async (req,res) => {
     const {id} = req.params
-    const bread = await Bread.findById(id)
+    const bread = await Bread.findById(id).populate('baker')
     res.render('show',{
         bread
     })
 })
 
 //GET edit page
-router.get('/:index/edit', (req,res) => {
-    const {index} = req.params
-    res.render('edit',{
-        bread:Bread[index],
-        index
+router.get('/:id/edit', async (req,res) => {
+    const {id} = req.params
+    const bread = await Bread.findById(id)
+    const bakers = await baker.find()
+    res.render('edit', {
+        bread,
+        bakers
     })
 })
 
@@ -42,8 +47,8 @@ router.post('/', async (req, res) => {
     res.status(303).redirect('/breads')
 })
 
-router.put('/:index', (req, res) => {
-    const { index } = req.params
+router.put('/:id', async (req, res) => {
+    const { id } = req.params
     if (req.body.hasGluten === 'on'){
         req.body.hasGluten = true
     } else {
@@ -52,14 +57,15 @@ router.put('/:index', (req, res) => {
 
     if (!req.body.image) req.body.image='https://images.unsplash.com/photo-1534620808146-d33bb39128b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
 
-    Bread[index]=req.body
-    res.status(303).redirect(`/breads/${index}`)
+    await Bread.findByIdAndUpdate(id, req.body)
+    res.status(303).redirect(`/breads/${id}`)
 })
 
-router.delete('/:index', (req, res) => {
-    const { index } = req.params
+router.delete('/:id', async (req, res) => {
+    const { id } = req.params
     // Removes x items from Bread array, starting at index
-    Bread.splice(index, 1)
+    // Bread.splice(id, 1)
+    await Bread.findByIdAndDelete(id)
     // takes yyou back to the home page
     res.status(303).redirect('/breads')
 })
