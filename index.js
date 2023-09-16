@@ -7,7 +7,6 @@ const mongoose = require('mongoose')
 
 const app = express()
 
-//
 // MIDDLEWARE
 app.use(methodOverride('_method'))
 app.use(express.urlencoded({extended: true}))
