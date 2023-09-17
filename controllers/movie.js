@@ -1,6 +1,6 @@
 const router = require('express').Router()
 const Movie = require('../models/movie')
-const movieseedData = require('../models/movieseedData')
+const movieseedData = require('../models/movieSeedData')
 
 
 //Seed data route
@@ -24,4 +24,8 @@ router.get('/:id', async (req, res)=>{
   res.render('movieShow', {movie})
 })
 
+router.post('/', async (req, res)=>{
+  await Movie.create(req.body)
+  res.status(303).redirect('/movies')
+})
 module.exports = router
