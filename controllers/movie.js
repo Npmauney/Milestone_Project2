@@ -16,22 +16,22 @@ router.get('/data/seed', async (req, res)=>{
 //Home Route for all the movies
 router.get('/', async(req, res)=>{//this route works fine
   const movies = await Movie.find()
-  res.json(movies)
+  res.render('index', {movies})
 })
 
 //Get a specific movie page
 router.get('/:id', async (req, res)=>{//this route works fine
   const {id} = req.params
   const movie = await Movie.findById(id)
-  // res.render('movieShow', {movie})
-  res.json(movie)
+  res.render('movieShow', {movie})
+  // res.json(movie)
 })
 
 //Create a movie
 router.post('/', async (req, res)=>{//this route needs work. It does post but without the body even though i put a subject in the body of postman
+  console.log(req.body)
   let createdMovie = await Movie.create(req.body)
-  // res.status(303).redirect('/movies')
-  res.json(createdMovie)
+  res.send(createdMovie)
 })
 
 //Render new movie page

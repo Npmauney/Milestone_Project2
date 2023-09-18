@@ -5,9 +5,10 @@ function individualMovieShow ({ movie }) {
     return (
       <Default>
           <h3>{movie.original_title}</h3>
-          <p>{movie.poster_path} {movie.release_date.getFullYear()}</p>
+          <img src={movie.poster_path}></img>
+          <p>{movie.release_date.getFullYear()}</p>
           <p>{movie.overview}</p>
-          <form action={`/bakers/${movie._id}?_method=DELETE`} method="POST">
+          <form action={`/movies/${movie._id}?_method=DELETE`} method="POST">
             <input type="submit" value="DELETE"/>
           </form>     
       </Default>
