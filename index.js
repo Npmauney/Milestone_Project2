@@ -17,8 +17,8 @@ app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 
 //routes
-app.use('/breads', breadController)
-app.use('/bakers', bakerController)
+// app.use('/breads', breadController)
+// app.use('/bakers', bakerController)
 app.use('/movies', movieController)
 
 // db connection
