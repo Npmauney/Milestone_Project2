@@ -10,7 +10,10 @@ function individualMovieShow ({ movie }) {
           <p>{movie.overview}</p>
           <form action={`/movies/${movie._id}?_method=DELETE`} method="POST">
             <input type="submit" value="DELETE"/>
-          </form>     
+          </form>
+          <a href={`/movies/${movie._id}/edit`}>
+          <button>Edit</button>
+          </a>     
       </Default>
     )
 }
