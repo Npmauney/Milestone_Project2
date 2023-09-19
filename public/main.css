@@ -7,3 +7,14 @@ img {
     display: block;
     margin: auto;
 }
+
+.star-button {
+    background: url('http://imgur.com/I0EwG.png') transparent;
+    height: 48px;
+    width: 45px;
+    border: none;
+}
+
+.star-button.clicked {
+    background: url('./assets/800px-Five-pointed_star.svg.png') transparent;
+  }
