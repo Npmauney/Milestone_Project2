@@ -28,7 +28,7 @@ function Index ({ movies }) {
     return (
       <Default>
         <h2>Movies</h2>
-    <div>
+    <div className='movieDisplay'>
     {movieDisplay}
     </div>
       </Default>
