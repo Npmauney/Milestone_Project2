@@ -1,9 +1,57 @@
 body {
-    background-color: floralwhite;
+    background-color: gray;
+    background-image: url('https://img.freepik.com/premium-photo/theater-stage-red-curtains-3d-illustration_68747-327.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 img {
     width: 50%;
     display: block;
     margin: auto;
+}
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: black;
+}
+h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    
+}
+input{
+    margin-left: 45%;
+    color: black;
+    margin-top: 10px;
+}
+button{
+margin-left: 44%;
+background-color: black;
+color: red;
+}
+li{
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: gray;
+}
+
+a{
+padding-left: 20px;
+text-decoration: none;
+color: black;
+}
+
+#display{
+text-align: center;
 }
