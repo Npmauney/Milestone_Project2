@@ -1,17 +1,27 @@
 const movies = require('express').Router()
+const { actorSeed } = require('../models/actorSeedData')
 const movie = require('../models/movie')
 const Movie = require('../models/movie')
 const movieseedData = require('../models/movieSeedData')
+const { movieSeed } = require('../models/movieSeedData')
 
 
 //Seed data route
 movies.get('/data/seed', async (req, res)=>{
   
   await Promise.all([Movie.deleteMany()])
-  const movies = await Movie.insertMany(movieseedData)
-  const movieIds = movies.map(movie => movie._id)
+  
   // res.redirect('/movies')
-  res.json(movies)
+  //res.json(movies)
+
+  try{
+    const movies = await Movie.insertMany(movieSeed())
+    const movieIds = movies.map(movie => movie._id)
+    res.json({ message: 'complete' })
+  }catch(error){
+    console.log('error', error)
+    res.status(500).json({ message: 'error saving movies' })
+  }
 })
 
 
