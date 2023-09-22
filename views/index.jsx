@@ -7,11 +7,11 @@ function Index ({ movies }) {
         return (
             //interpolates throught the bread array
             //adds a hyperlink to the index of the breads array (which changes the webpage because of the code in bread.js in controllers/models)
-            <li key={movie._id}>
+            <div id='display' key={movie._id}>
                 <a href={`/movies/${movie._id}`}>
                     {movie.original_title}
                 </a>
-            </li>
+            </div>
         )
     })
 
@@ -28,7 +28,7 @@ function Index ({ movies }) {
     return (
       <Default>
         <h2>Movies</h2>
-    <div>
+    <div className='movieDisplay'>
     {movieDisplay}
     </div>
       </Default>

@@ -1,9 +1,117 @@
 body {
-    background-color: floralwhite;
+    background-color: gray;
+    background-image: url('https://img.freepik.com/premium-photo/theater-stage-red-curtains-3d-illustration_68747-327.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 img {
     width: 50%;
     display: block;
     margin: auto;
+}
+h1{
+    text-align: center;
+    color: black;
+}
+
+h2{
+    text-align: center;
+    color: black;
+    margin-top: 3%;
+    font-size: 60px;
+}
+h3{
+    text-align: center;
+    color: black;
+    margin-top: 3%;
+    font-size: 60px;
+}
+h4{
+    text-align: center;
+    color: black;
+    margin-top: 3%;
+    font-size: 30px;
+}
+
+
+p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    
+}
+input{
+    margin-left: 45%;
+    color: black;
+    margin-top: 10px;
+}
+button{
+margin-left: 44%;
+background-color: black;
+color: red;
+}
+li{
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: gray;
+    margin-top: -1%;
+}
+
+a{
+padding-left: 20px;
+text-decoration: none;
+color: black;
+}
+
+#display{
+text-align: center;
+}
+
+.editInput{
+    margin-bottom: -1%;
+    padding-right: 14%;
+}
+
+.editInput label{
+    margin-bottom: -2%;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    padding-left: 13%;
+  
+}
+.newInput{
+    margin-bottom: -1%;
+    padding-right: 14%;
+}
+
+.newInput label{
+    margin-bottom: -2%;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    padding-left: 13%;
+  
+}
+
+.movieDisplay{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header{
+    background-color: darkgray;
+}
+
+input[type=submit]{
+    color: black;
+}
+input[type=submit]:hover{
+    background-color: lightgray;
+    color: red;
 }
