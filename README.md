@@ -15,6 +15,7 @@ Imago Vocis
 </ol>
 
 <h1>How to use Imago Vocis</h1>
+<p>All routes use /movies as the base url</p>
 <table>
 <tr>
 <th>Route</th>
@@ -30,36 +31,36 @@ Imago Vocis
 
 <tr>
 <td>Movie show</td>
-<td>/movies/:id</td>
+<td>/:id</td>
 <td>Specific movie page</td>
 </tr>
 <tr>
 <td>Delete</td>
-<td>/movies/:id</td>
+<td>/:id</td>
 <td>Delete movie</td>
 </tr>
 
 <tr>
 <td>Edit route</td>
-<td>/movies/:id/edit</td>
+<td>/:id/edit</td>
 <td>Edit movie</td>
 </tr>
 
 <tr>
 <td>Data seed</td>
-<td>/movies/data/seed</td>
+<td>/data/seed</td>
 <td>Seed movies in database</td>
 </tr>
 
 <tr>
 <td>Create movie</td>
-<td>/movies</td>
+<td>/</td>
 <td>Create movie</td>
 </tr>
 
 <tr>
 <td>New</td>
-<td>/movies/new</td>
+<td>/new</td>
 <td>Render new movie page</td>
 </tr>
 </table>
