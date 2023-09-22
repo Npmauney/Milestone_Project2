@@ -1,8 +1,5 @@
 const movies = require('express').Router()
-
-=======
 const { actorSeed } = require('../models/actorSeedData')
-const movie = require('../models/movie')
 const Movie = require('../models/movie')
 const movieseedData = require('../models/movieSeedData')
 const { movieSeed } = require('../models/movieSeedData')
@@ -16,7 +13,7 @@ movies.get('/data/seed', async (req, res)=>{
   const movies = await Movie.insertMany(movieseedData)
   const movieIds = movies.map(movie => movie._id)
   res.redirect('/movies')
-=======
+
   
   // res.redirect('/movies')
   //res.json(movies)

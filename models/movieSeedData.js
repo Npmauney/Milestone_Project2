@@ -21,7 +21,7 @@ module.exports = [
   release_date: "2013-07-11"
 }
 ]
-=======
+
 const Movie = require('../models/movie')
 const { json, response } = require("express");
 
@@ -46,7 +46,6 @@ async function movieSeed(){
     
     }
 }
-
 
 
 module.exports = {
