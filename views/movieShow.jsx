@@ -5,6 +5,7 @@ function individualMovieShow ({ movie }) {
     return (
       <Default>
           <h3>{movie.original_title}</h3>
+          <h4>{movie.original_language}</h4>
           <img src={movie.poster_path}></img>
           <p>{movie.release_date.getFullYear()}</p>
           <p>{movie.overview}</p>

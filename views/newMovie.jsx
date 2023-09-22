@@ -9,7 +9,7 @@ return(
   <form action='/movies' method='POST'>
   <div className='form-group newInput'>
   < label htmlFor= 'original_language'>Original Language</label><br></br>
-  <input type='text' id='original_language' name='original_lanugage' />
+  <input type='text' id='original_language' name='original_language' />
   </div>
   <div className='form-group newInput'>
   <label htmlFor= 'original_title'>Original Title</label><br></br>
