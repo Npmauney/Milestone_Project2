@@ -54,6 +54,7 @@ movies.post('/', async (req, res)=>{//this route needs work. It does post but wi
   res.status(303).redirect('/movies')
 })
 
+
 //Get a specific movie page
 movies.get('/:id', async (req, res)=>{//this route works fine
   const {id} = req.params
@@ -61,6 +62,13 @@ movies.get('/:id', async (req, res)=>{//this route works fine
   res.render('movieShow', {movie})
 })
 
+//Get a specific movie page - API NEEDS WORK
+movies.get('/:id', async (req, res)=>{
+  const API = await fetch('https://api.themoviedb.org/3/trending/movie/week?api_key=8a84e44e1b62f0e80accee95d9a91cd0')
+  trendingMovies = await API.json()
+  const movie = await Movie.findById(id)
+  res.render('movieShow', {movie, trendingMovies})
+})
 
 //Get edit page for movie
 movies.get('/:id/edit', async (req, res)=>{
