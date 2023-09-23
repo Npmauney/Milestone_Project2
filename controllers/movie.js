@@ -10,14 +10,6 @@ movies.get('/data/seed', async (req, res)=>{
   
   await Promise.all([Movie.deleteMany()])
 
-  const movies = await Movie.insertMany(movieseedData)
-  const movieIds = movies.map(movie => movie._id)
-  res.redirect('/movies')
-
-  
-  // res.redirect('/movies')
-  //res.json(movies)
-
   try{
     const movies = await Movie.insertMany(movieSeed())
     const movieIds = movies.map(movie => movie._id)
@@ -26,7 +18,6 @@ movies.get('/data/seed', async (req, res)=>{
     console.log('error', error)
     res.status(500).json({ message: 'error saving movies' })
   }
-
 })
 
 
