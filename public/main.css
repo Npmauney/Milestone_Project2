@@ -8,6 +8,7 @@ body {
 .banner{
     background-color: #52564E;
     color: #201E1F;
+    
 }
 
 img {
@@ -21,15 +22,17 @@ h1{
     color: white;
     padding-bottom: .25em;
     font-family: 'Impact',sans-serif;
+    font-size: 5em;
 }
 
 h2{
     text-align: center;
-    color: black;
+    color: white;
     margin-top: 3%;
     font-size: 60px;
-    
+    font-family: 'Impact',sans-serif;
 }
+
 h3{
     text-align: center;
     color: white;
@@ -86,7 +89,15 @@ nav{
 a{
 padding-left: 20px;
 text-decoration: none;
-color: black;
+color: white;
+}
+
+.black{
+    color:black;
+}
+
+.white{
+    color:white;
 }
 
 #display{
@@ -118,11 +129,6 @@ text-align: center;
     text-align: center;
     padding-left: 13%;
   
-}
-
-.movieDisplay{
-    font-size: 40px;
-    font-weight: bold;
 }
 
 header{

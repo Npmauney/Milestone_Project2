@@ -12,7 +12,7 @@ function Default(html) {
     <body>
       <div className="wrapper">
         <header className='banner'>
-          <h1><a href="/movies">Imago Vocis</a></h1>
+          <h1><a href="/movies" className='black'>Imago Vocis</a></h1>
         </header>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid">

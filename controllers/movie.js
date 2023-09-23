@@ -29,11 +29,13 @@ movies.get('/data/seed', async (req, res)=>{
 
 })
 
-
 //Home Route for all the movies
 movies.get('/', async(req, res)=>{//this route works fine
+  const API = await fetch('https://api.themoviedb.org/3/trending/movie/week?api_key=8a84e44e1b62f0e80accee95d9a91cd0')
+  trendingMovies = await API.json()
+
   const movies = await Movie.find()
-  res.render('index', {movies})
+  res.render('index', {movies, trendingMovies})
 })
 
 //Render new movie page
