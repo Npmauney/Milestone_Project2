@@ -77,13 +77,12 @@ li{
     text-align: center;
 }
 
-nav{
-    display: flex;
-    justify-content: space-evenly;
+.navy{
     background-color: #912728;
     margin-top: -1%;
     padding-top: .25em;
     padding-bottom: .25em;
+    text-align: center;
 }
 
 a{
@@ -143,7 +142,7 @@ input[type=submit]:hover{
     color: red;
 }
 
-.nav-link{
+.nav-linkJ{
     font-family: 'Leelawadee UI',sans-serif;
     font-weight: bold;
     font-size: larger;

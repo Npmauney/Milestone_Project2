@@ -14,16 +14,11 @@ function Default(html) {
         <header className='banner'>
           <h1><a href="/movies" className='black'>Imago Vocis</a></h1>
         </header>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <div className="container-fluid">
-    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div className="navbar-nav">
-        <a className="nav-link active" aria-current="page" href="/movies">Home</a>
-        <a className="nav-link" href="/movies/new">Create Movie</a>
-        <a className="nav-link" href="#">Trending Movies</a>
-        <a className="nav-link" href="/movies/favorites">Personal Favorites</a>
-      </div>
-    </div>
+        <nav className=" navbar-expand-lg navbar-light">
+  <div className=" navy">
+        <a className="nav-linkJ active" aria-current="page" href="/movies">Home</a>
+        <a className="nav-linkJ" href="/movies/new">Create Movie</a>
+        <a className="nav-linkJ" href="/movies/favorites">Personal Favorites</a>
   </div>
 </nav>
         <div className="container">
