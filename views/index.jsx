@@ -1,6 +1,5 @@
 const React = require('react')
 const Default = require('./layouts/default')
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 //breads is the name of the array of objects
 function Index ({ movies }) {

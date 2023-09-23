@@ -41,6 +41,11 @@ movies.get('/new', async (req, res)=>{
   res.render('newMovie')// newmovie needs to be created
 })
 
+//Get favorites pages
+movies.get('/favorites', async (req, res)=>{
+  res.render('favorites')//page pending formatting
+})
+
 //Create a movie
 movies.post('/', async (req, res)=>{//this route needs work. It does post but without the body even though i put a subject in the body of postman
   await Movie.create(req.body)
