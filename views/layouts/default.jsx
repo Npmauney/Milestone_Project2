@@ -22,6 +22,7 @@ function Default(html) {
         <a className="nav-link active" aria-current="page" href="/movies">Home</a>
         <a className="nav-link" href="/movies/new">Create movie</a>
         <a className="nav-link" href="#">Trending Movies</a>
+        <a className="nav-link" href="/reviews">Reviews</a>
       </div>
     </div>
   </div>

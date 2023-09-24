@@ -115,3 +115,8 @@ input[type=submit]:hover{
     background-color: lightgray;
     color: red;
 }
+
+span{
+    text-align: center;
+    color: black;
+}

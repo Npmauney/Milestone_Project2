@@ -12,21 +12,8 @@ movies.get('/data/seed', async (req, res)=>{
 
   const movies = await Movie.insertMany(movieseedData)
   const movieIds = movies.map(movie => movie._id)
-  res.redirect('/movies')
-
   
-  // res.redirect('/movies')
-  //res.json(movies)
-
-  try{
-    const movies = await Movie.insertMany(movieSeed())
-    const movieIds = movies.map(movie => movie._id)
-    res.json({ message: 'complete' })
-  }catch(error){
-    console.log('error', error)
-    res.status(500).json({ message: 'error saving movies' })
-  }
-
+  res.redirect('/movies')
 })
 
 
@@ -38,7 +25,7 @@ movies.get('/', async(req, res)=>{//this route works fine
 
 //Render new movie page
 movies.get('/new', async (req, res)=>{
-  res.render('newMovie')// newmovie needs to be created
+  res.render('newMovie')// 
 })
 
 //Create a movie
@@ -61,16 +48,21 @@ movies.get('/:id/edit', async (req, res)=>{
   let movie = await Movie.findById(id)
   res.render('movieEdit', {movie})// moviesEdit needs to be created
 })
+
+//Delete movie
 movies.delete('/:id', async (req, res)=>{
   const {id} = req.params
  await Movie.findByIdAndDelete(id)
   res.redirect('/movies')
 })
 
+//Update movie
 movies.put('/:id', async (req, res)=>{
   const {id} = req.params
   await Movie.findByIdAndUpdate(id, req.body)
   res.status(303).redirect(`/movies/${id}`)
 })
+
+
 
 module.exports = movies

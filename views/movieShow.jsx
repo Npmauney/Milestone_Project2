@@ -2,6 +2,7 @@ const React = require('react')
 const Default = require('./layouts/default')
 
 function individualMovieShow ({ movie }) {
+
     return (
       <Default>
           <h3>{movie.original_title}</h3>
