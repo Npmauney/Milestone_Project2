@@ -4,7 +4,30 @@
 Imago Vocis
 
 <h1>Description</h1>
-<p>This is a full stack application using Express.js as our backend, MongoDB as our database, and using express react views as our front end. Our application is a movie site where users can create movies, delete movies, update movies, and read movies. Some of the challenges with this project was coordinating how to manage our github pull requests as a team and maintaining a good pace to finish for our deadline</p>
+<p>Imago Vocis is a movie rate and review page . This is a MERN stack application with many different developer languages in use . It was created with MVP in mind . Minimum Viable Product.
+
+Users of Imago Vocis can find their favoirite movies with a simple search of the title.
+
+Users can also add a movie the wide data base 
+Users can also search for their favorite movies and save to their favorites list . Movies can be organized into categories . Eventually with time alloted we would like to build upon this app and have search by actors and even ratings. 
+
+Our app  includes CRUD logic for movies and reviews .
+The inspiration for this app is IMDB. </p>
+
+<h1>Development Languages Used</h1>
+<ol>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ol>
+
+<h1>Development Helpers</h1>
+<ol>
+<li>React</li>
+<li>React-Bootstrap</h1>
+<li>Express</li>
+<li>Mongo DB</li>
+</ol>
 
 <h1>How to install and Run the Imago Vocis</h1>
 <ol>
@@ -67,9 +90,9 @@ Imago Vocis
 
 <h1>Collaborators</h1>
 <ul>
-<li><a href='https://github.com/BrandonLife'>Brandon</a></li>
-<li><a href=''>Nathan</a></li>
-<li><a href=''>Connor</a></li>
-<li><a href='https://github.com/ACGreve'>Amelia</a></li>
-<li><a href=''>Aaron</a></li>
+<li><a href='https://www.linkedin.com/in/brandon-life/'>Brandon</a></li>
+<li><a href='https://www.linkedin.com/in/nathaniel-mauney-2445b6179/'>Nathan</a></li>
+<li><a href='https://www.linkedin.com/in/conor-panuccio-315289275/'>Connor</a></li>
+<li><a href='https://www.linkedin.com/in/amelia-greve-29155b141/'>Amelia</a></li>
+<li><a href='https://www.linkedin.com/in/aaron-nash-512796272/'>Aaron</a></li>
 </ul>
