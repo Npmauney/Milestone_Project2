@@ -1,10 +1,14 @@
 {
-  "name": "bread-crud",
+  "name": "movie-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "engines": {
+    "node": "18.16.0"
+  },
   "scripts": {
-    "dev": "npx nodemon index.js -e .js,.jsx"
+    "dev": "npx nodemon server.js -e .js,.jsx",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
