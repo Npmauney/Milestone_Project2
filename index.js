@@ -23,7 +23,10 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
     .catch(err => console.error(err));
 
 const movieController = require('./controllers/movie.js')
+const reviewController = require('./controllers/review.js')
 app.use('/movies', movieController)
+app.use('/reviews', reviewController)
+
 
 
 

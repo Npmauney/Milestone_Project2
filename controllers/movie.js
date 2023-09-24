@@ -10,6 +10,11 @@ movies.get('/data/seed', async (req, res)=>{
   
   await Promise.all([Movie.deleteMany()])
 
+
+  const movies = await Movie.insertMany(movieseedData)
+  const movieIds = movies.map(movie => movie._id)
+  
+  res.redirect('/movies')
   try{
     const movies = await Movie.insertMany(movieSeed())
     const movieIds = movies.map(movie => movie._id)
@@ -18,6 +23,7 @@ movies.get('/data/seed', async (req, res)=>{
     console.log('error', error)
     res.status(500).json({ message: 'error saving movies' })
   }
+
 })
 
 //Home Route for all the movies
@@ -31,7 +37,7 @@ movies.get('/', async(req, res)=>{//this route works fine
 
 //Render new movie page
 movies.get('/new', async (req, res)=>{
-  res.render('newMovie')// newmovie needs to be created
+  res.render('newMovie')// 
 })
 
 //Get favorites pages
@@ -67,16 +73,21 @@ movies.get('/:id/edit', async (req, res)=>{
   let movie = await Movie.findById(id)
   res.render('movieEdit', {movie})// moviesEdit needs to be created
 })
+
+//Delete movie
 movies.delete('/:id', async (req, res)=>{
   const {id} = req.params
  await Movie.findByIdAndDelete(id)
   res.redirect('/movies')
 })
 
+//Update movie
 movies.put('/:id', async (req, res)=>{
   const {id} = req.params
   await Movie.findByIdAndUpdate(id, req.body)
   res.status(303).redirect(`/movies/${id}`)
 })
+
+
 
 module.exports = movies
