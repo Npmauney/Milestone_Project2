@@ -7,7 +7,7 @@ function Index ({ movies, trendingMovies }) {
     const trendingDisplay = trendingMovies.results.map(movie => {
         return (
                 <div className='white' key={movie.id}>
-                    <a href={`/movies/${movie.id}`}>
+                    <a href={`https://image.tmdb.org/t/p/original`+movie.poster_path}>
                         {movie.title}
                     </a>
                 </div>
