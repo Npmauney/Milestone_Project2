@@ -18,10 +18,10 @@ function Default(html) {
         <nav className=" navbar-expand-lg navbar-light">
   <div className=" navy">
         <a className="nav-linkJ active" aria-current="page" href="/movies">Home</a>
-        <a className="nav-linkJ" href="/movies/new">Create Movie</a>
+        <a className="nav-linkJ" href="/reviews/new">Create Review</a>
+        <a className="nav-linkJ" href="/reviews">Reviews</a>
         <a className="nav-linkJ" href="/movies/favorites">Personal Favorites</a>
-
-  </div>
+</div>
 </nav>
         <div className="container">
           {html.children}
