@@ -81,6 +81,6 @@ function individualMovieShow({ movie }) {
     </html>
   );
 }
-
+}
 module.exports = individualMovieShow;
 
