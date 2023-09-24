@@ -58,7 +58,7 @@ function individualMovieShow({ movie }) {
         </Row>
         <Row>
           <Col>
-            <form action={`/movies/${movie._id}?_method=DELETE`} method="POST">
+            <form action={`/movies/${movie.id}?_method=DELETE`} method="POST">
               <input type="submit" value="Delete Movie" />
             </form>
           </Col>

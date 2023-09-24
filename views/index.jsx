@@ -24,8 +24,8 @@ function Index ({ movies, trendingMovies }) {
 
     const altDisplay = movies.map((movie) => {
         return (
-            <div id='alt' key={movie._id}>
-                <a href={`/movies/${movie._id}`}>
+            <div id='alt' key={movie.id}>
+                <a href={`/movies/${movie.id}`}>
                     {movie.original_title}
                 </a>
             </div>
@@ -44,8 +44,8 @@ function Index ({ movies, trendingMovies }) {
 
     const movieDisplay = movies.map((movie) => {
         return (
-            <li key={movie._id}>
-                <a href={`/movies/${movie._id}`}>
+            <li key={movie.id}>
+                <a href={`/movies/${movie.id}`}>
                     {movie.original_title}
                 </a>
             </li>
