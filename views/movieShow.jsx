@@ -4,9 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-
-function individualMovieShow ({ movie }) {
-
 //     return (
 //       <Default>
 //           <h3>{movie.original_title}</h3>
@@ -80,7 +77,6 @@ function individualMovieShow({ movie }) {
     </Default>
     </html>
   );
-}
 }
 module.exports = individualMovieShow;
 
