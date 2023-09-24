@@ -1,5 +1,14 @@
 body {
-    background-color: floralwhite;
+    background-color: #201E1F;
+    /*background-image: url('https://img.freepik.com/premium-photo/theater-stage-red-curtains-3d-illustration_68747-327.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.banner{
+    background-color: #52564E;
+    color: #201E1F;
+    
 }
 
 img {
@@ -7,3 +16,150 @@ img {
     display: block;
     margin: auto;
 }
+
+h1{
+    text-align: center;
+    color: white;
+    padding-bottom: .25em;
+    font-family: 'Impact',sans-serif;
+    font-size: 5em;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    margin-top: 3%;
+    font-size: 60px;
+    font-family: 'Impact',sans-serif;
+}
+
+h3{
+    text-align: center;
+    color: white;
+    margin-top: 3%;
+    font-size: 60px;
+    font-family: 'Impact',sans-serif;
+}
+h4{
+    text-align: center;
+    color: white;
+    margin-top: 3%;
+    font-size: 30px;
+    font-family: 'Leelawadee UI',sans-serif;
+}
+
+label{
+    color: white;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Leelawadee UI',sans-serif;
+    
+}
+
+input{
+    margin-left: 45%;
+    color: black;
+    margin-top: 10px;
+}
+
+button{
+margin-left: 44%;
+background-color: black;
+color: red;
+}
+
+li{
+    text-align: center;
+}
+
+.navy{
+    background-color: #912728;
+    margin-top: -1%;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    text-align: center;
+}
+
+a{
+padding-left: 20px;
+text-decoration: none;
+color: white;
+}
+
+.black{
+    color:black;
+}
+
+.white{
+    color:white;
+}
+
+#display{
+text-align: center;
+}
+
+.editInput{
+    margin-bottom: -1%;
+    padding-right: 14%;
+}
+
+.editInput label{
+    margin-bottom: -2%;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    padding-left: 13%;
+  
+}
+.newInput{
+    margin-bottom: -1%;
+    padding-right: 14%;
+}
+
+.newInput label{
+    margin-bottom: -2%;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    padding-left: 13%;
+  
+}
+
+header{
+    background-color: darkgray;
+}
+
+input[type=submit]{
+    color: black;
+}
+input[type=submit]:hover{
+    background-color: lightgray;
+    color: red;
+}
+
+
+
+
+.nav-linkJ{
+    font-family: 'Leelawadee UI',sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    color: white;
+}
+
+.star-button {
+    background: url('http://imgur.com/I0EwG.png') transparent;
+    height: 48px;
+    width: 45px;
+    border: none;
+}
+
+.star-button.clicked {
+    background: url('./assets/800px-Five-pointed_star.svg.png') transparent;
+  }
+
