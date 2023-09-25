@@ -37,7 +37,7 @@ The inspiration for this app is IMDB. </p>
 </ol>
 
 <h1>How to use Imago Vocis</h1>
-<p>All routes use /movies as the base url</p>
+<p>All routes use / as the base url</p>
 <table>
 <tr>
 <th>Route</th>
@@ -52,20 +52,20 @@ The inspiration for this app is IMDB. </p>
 </tr>
 
 <tr>
-<td>Movie show</td>
+<td> movie show</td>
 <td>/:id</td>
 <td>Specific movie page</td>
 </tr>
 <tr>
 <td>Delete</td>
 <td>/:id</td>
-<td>Delete movie</td>
+<td>Delete reviews</td>
 </tr>
 
 <tr>
 <td>Edit route</td>
 <td>/:id/edit</td>
-<td>Edit movie</td>
+<td>Edit reviews</td>
 </tr>
 
 <tr>
