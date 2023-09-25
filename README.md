@@ -75,15 +75,15 @@ The inspiration for this app is IMDB. </p>
 </tr>
 
 <tr>
-<td>Create movie</td>
-<td>/</td>
+<td>Create movie, create review</td>
+<td>/create</td>
 <td>Create movie</td>
 </tr>
 
 <tr>
 <td>New</td>
 <td>/new</td>
-<td>Render new movie page</td>
+<td>Render new movie page , review</td>
 </tr>
 </table>
 
