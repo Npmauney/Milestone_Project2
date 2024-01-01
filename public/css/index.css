@@ -1,0 +1,34 @@
+body {
+  background-color: #27323A;
+}
+
+.banner {
+  background-color: #52658F;
+  color: #F4F4F4;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #78C7A3;
+}
+
+label,
+.navy {
+  background-color: #4B0082;
+}
+
+a {
+  color: #F4F4F4;
+}
+
+button,
+input[type=submit] {
+  color: #27323A;
+}
+
+input[type=submit]:hover {
+  background-color: #A9A9A9;
+  color: #FF0000;
+}/*# sourceMappingURL=index.css.map */

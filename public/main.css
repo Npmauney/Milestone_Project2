@@ -1,17 +1,13 @@
 body {
-    background-color: #201E1F;
-    /*background-image: url('https://img.freepik.com/premium-photo/theater-stage-red-curtains-3d-illustration_68747-327.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; */
+    background-color: #27323A; /* Dark blue-green */
 }
 
-.banner{
-    background-color: #52564E;
-    color: #201E1F;
-    
+.banner {
+    background-color: #52658F; /* Blue */
+    color: #F4F4F4; /* Light gray */
 }
 
-.bord{
+.bord {
     width: 100%;
     text-align: center;
     justify-content: center;
@@ -23,145 +19,135 @@ img {
     margin: auto;
 }
 
-h1{
+h1 {
     text-align: center;
-    color: white;
-    padding-bottom: .25em;
-    font-family: 'Impact',sans-serif;
+    color: #78C7A3; /* Green */
+    padding-bottom: 0.25em;
+    font-family: 'Impact', sans-serif;
     font-size: 5em;
 }
 
-h2{
+h2,
+h3 {
     text-align: center;
-    color: white;
+    color: #78C7A3; /* Green */
     margin-top: 3%;
     font-size: 60px;
-    font-family: 'Impact',sans-serif;
+    font-family: 'Impact', sans-serif;
 }
 
-h3{
+h4 {
     text-align: center;
-    color: white;
-    margin-top: 3%;
-    font-size: 60px;
-    font-family: 'Impact',sans-serif;
-}
-h4{
-    text-align: center;
-    color: white;
+    color: #78C7A3; /* Green */
     margin-top: 3%;
     font-size: 30px;
-    font-family: 'Impact',sans-serif;
+    font-family: 'Impact', sans-serif;
 }
 
-label{
-    color: white;
+label {
+    color: #78C7A3; /* Green */
 }
 
-p{
+p {
     text-align: center;
     font-size: 30px;
     font-weight: bolder;
-    color: white;
-    font-family: 'Leelawadee UI',sans-serif;
-    
+    color: #78C7A3; /* Green */
+    font-family: 'Leelawadee UI', sans-serif;
 }
 
-input{
+input {
     margin-left: 45%;
-    color: black;
+    color: #27323A; /* Dark blue-green */
     margin-top: 10px;
 }
 
-button{
-margin-left: 44%;
-background-color: black;
-color: red;
+button {
+    margin-left: 44%;
+    background-color: #27323A; /* Dark blue-green */
+    color: #52658F; /* Blue */
 }
 
-li{
+li {
     text-align: center;
 }
 
-.navy{
-    background-color: #912728;
+.navy {
+    background-color: #4B0082; /* Indigo */
     margin-top: -1%;
-    padding-top: .25em;
-    padding-bottom: .25em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
     text-align: center;
 }
 
-a{
-padding-left: 20px;
-text-decoration: none;
-color: white;
+a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: #F4F4F4; /* Light gray */
 }
 
-.space{
+.space {
     padding-bottom: 75rem;
 }
 
-.black{
-    color:black;
+.black {
+    color: #27323A; /* Dark blue-green */
     text-align: center;
 }
 
-.white{
-    color:white;
+.white {
+    color: #F4F4F4; /* Light gray */
     text-align: center;
 }
 
-#display{
-text-align: center;
+#display {
+    text-align: center;
 }
 
-.editInput{
+.editInput {
     margin-bottom: -1%;
     padding-right: 14%;
 }
 
-.editInput label{
+.editInput label {
     margin-bottom: -2%;
-    color: black;
+    color: #27323A; /* Dark blue-green */
     font-size: 24px;
     text-align: center;
     padding-left: 13%;
-  
 }
-.newInput{
+
+.newInput {
     margin-bottom: -1%;
     padding-right: 14%;
 }
 
-.newInput label{
+.newInput label {
     margin-bottom: -2%;
-    color: black;
+    color: #27323A; /* Dark blue-green */
     font-size: 24px;
     text-align: center;
     padding-left: 13%;
-  
 }
 
-header{
-    background-color: darkgray;
+header {
+    background-color: #52658F; /* Blue */
 }
 
-input[type=submit]{
-    color: black;
-}
-input[type=submit]:hover{
-    background-color: lightgray;
-    color: red;
+input[type=submit] {
+    color: #27323A; /* Dark blue-green */
 }
 
+input[type=submit]:hover {
+    background-color: #A9A9A9; /* Dark gray */
+    color: #FF0000; /* Red */
+}
 
-
-
-.nav-linkJ{
-    font-family: 'Leelawadee UI',sans-serif;
+.nav-linkJ {
+    font-family: 'Leelawadee UI', sans-serif;
     font-weight: bold;
     font-size: larger;
-    color: white;
+    color: #F4F4F4; /* Light gray */
 }
 
 .star-button {
@@ -173,5 +159,4 @@ input[type=submit]:hover{
 
 .star-button.clicked {
     background: url('./assets/800px-Five-pointed_star.svg.png') transparent;
-  }
-
+}

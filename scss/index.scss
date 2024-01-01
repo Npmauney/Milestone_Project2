@@ -1,0 +1,44 @@
+$body-bg-color: #27323A; // Dark blue-green
+$banner-bg-color: #52658F; // Blue
+$banner-text-color: #F4F4F4; // Light gray
+$heading-color: #78C7A3; // Green
+$navy-bg-color: #4B0082; // Indigo
+$link-color: #F4F4F4; // Light gray
+$dark-blue-green: #27323A;
+$dark-gray: #A9A9A9;
+$red: #FF0000;
+
+body {
+    background-color: $body-bg-color;
+}
+
+.banner {
+    background-color: $banner-bg-color;
+    color: $banner-text-color;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: $heading-color;
+}
+
+label,
+.navy {
+    background-color: $navy-bg-color;
+}
+
+a {
+    color: $link-color;
+}
+
+button,
+input[type="submit"] {
+    color: $dark-blue-green;
+}
+
+input[type="submit"]:hover {
+    background-color: $dark-gray;
+    color: $red;
+}
