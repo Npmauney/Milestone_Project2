@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "npx nodemon server.js -e .js,.jsx",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "npx tsc"
   },
   "keywords": [],
   "author": "",
@@ -24,5 +25,8 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
   }
 }
